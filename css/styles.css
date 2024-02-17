@@ -1,0 +1,163 @@
+/*Mobile first*/
+body {
+    margin:0;
+}
+html {
+    font-size:16px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+main {
+    height: 100vh;
+}
+#illustration {
+    height: 35vh;
+    background-image: url("/assets/images/illustration-sign-up-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius:0 0 15px 15px ;
+}
+h1 {
+    font-size:2.5rem;
+    font-family: "Roboto", sans-serif;
+    color:hsl(234, 29%, 20%);
+    margin:0;
+    font-weight: 700;
+}
+p {
+    margin:0;
+}
+#content {
+    padding:20px 30px;
+    height: 65vh;
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-around;
+    font-size: 1.1rem;
+}
+.bulletPoints {
+    display: flex;
+    gap:20px;
+}
+input {
+    border:1px solid hsl(231, 7%, 60%);
+
+}
+input, label {
+    display: block;
+}
+form {
+    margin-top:0;
+    display: flex;
+    flex-direction: column;
+    gap:18px;
+}
+form > *:not(label) {
+    padding:20px 30px;
+    border-radius: 7px;
+}
+label {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color:hsl(234, 29%,20%);
+}
+button {
+    margin-top:unset;
+    border:none;
+    background-color: hsl(234, 29%, 20%);
+    font-weight: 700;
+    color:hsl(0, 0%, 100%);
+}
+input:focus {
+    outline: none;
+    border:1px solid black;
+}
+@media(max-width: 375px){
+    #illustration{
+        height: 40vh;
+    }
+    button {
+        margin-top:12px;
+    }
+    #content {
+        height: 60vh;
+        padding:20px;
+        font-size:1rem;
+    }
+    h1{
+        font-size:2rem;
+    }
+    label{
+        font-size: 0.8rem;
+    }
+    form {
+        margin-top:25px;
+        gap:8px;
+    }
+    form > *:not(label) {
+        padding:15px 30px;
+    }
+}
+
+/*Desktop media query*/
+@media (min-width: 768px){
+    main{
+        background-color:hsl(234, 29%, 20%);
+        display:flex;
+        justify-content: center;
+    }
+    #illustration {
+        background-image:url('/assets/images/illustration-sign-up-desktop.svg');
+        width:47%;
+        height: auto;
+        background-position: center;
+        background-size: cover;
+        border-radius: 12px;
+        min-width: 200px;
+    }
+    #container {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        padding: 15px;
+        align-self: center;
+        background-color: hsl(0, 0%, 100%);
+        height: 60vh;
+        border-radius: 25px;
+        min-width: 680px;
+        max-width:800px;
+        min-height: 460px;
+        max-height: 500px;
+    }
+    #content {
+        padding: 40px;
+        height: unset;
+        width: 45%;
+        font-size: 0.8rem;
+        order: -2;
+    }
+    h1 {
+        font-weight: 700;
+        font-size: clamp(2rem,3vw, 2.1);
+    }
+    form > *:not(label) {
+        padding:15px 15px;
+    }
+    form {
+        gap:15px;
+    }
+    p {
+        line-height: 20px;
+        font-size: clamp(0.9rem,0.9vw, 0.95rem);
+    }
+    label {
+        font-size: 0.8rem;
+    }
+    button, input:hover {
+        cursor:pointer;
+    }
+    button:hover {
+        background: linear-gradient(to right,#d44461, tomato);
+    }
+
+}
