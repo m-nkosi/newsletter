@@ -26,6 +26,11 @@ h1 {
 }
 p {
     margin:0;
+    font-weight: 400;
+    color:hsl(234, 29%, 20%);
+}
+#highLighted {
+    font-weight: 700;
 }
 #content {
     padding:20px 30px;
@@ -67,6 +72,10 @@ button {
     background-color: hsl(234, 29%, 20%);
     font-weight: 700;
     color:hsl(0, 0%, 100%);
+    padding:20px 30px;
+    border-radius: 7px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
 }
 input:focus {
     outline: none;
@@ -91,7 +100,29 @@ input::placeholder {
     color:hsla(4, 100%, 67%, 95%);
     font-weight: 400;
 }
+#successSection {
+    display: flex;
+    flex-direction: column;
+    height:90vh;
+    padding:30px 30px;
+    justify-content: space-between;
+}
+#successSection > div {
+    height: 60vh;
+    gap:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#successIcon {
+    width:50px;
+}
+#successSection {
+    display: none;
+}
+
 @media(max-width: 375px){
+
     #illustration{
         height: 40vh;
     }
