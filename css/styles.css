@@ -209,4 +209,23 @@ input::placeholder {
     button:hover {
         background: linear-gradient(to right,#d44461, tomato);
     }
+    #successSection {
+        display: none;
+        background-color:hsl(0, 0%, 100%);
+        max-width:350px;
+        height: 350px;
+        padding:40px 40px;
+        border-radius:30px;
+        align-self: center;
+    }
+    #headingForSuccess {
+        font-size:3rem;
+        font-weight: 700;
+    }
+    #successSection > div > p {
+        font-size:0.85rem;
+    }
+    #successSection > div {
+        height: unset;
+    }
 }

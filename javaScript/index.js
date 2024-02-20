@@ -10,8 +10,9 @@ $(document).ready(() => {
             $email.addClass('errorInput');
             return false;
         }else{
-            $("#container").fadeOut();
-            $("#successSection").css("display", "flex").fadeIn("slow");
+            $("#container").hide()
+            $("#highLighted").html($("#email").val());
+            $("#successSection").css("display", "flex").show("slow");
             if ($(".errorInput")){
                 $errorLabel.hide();
                 $email.removeClass('errorInput');
@@ -20,9 +21,9 @@ $(document).ready(() => {
         }
     })
     $("#buttonForSuccessPage").on("click", () => {
-        $("#successSection").fadeOut();
+        $("#successSection").hide();
         document.querySelector("#email").value = "";
-        $("#container").fadeIn("slow");
+        $("#container").show();
 
         return true;
     })
