@@ -48,7 +48,7 @@ Users should be able to:
 ![mobile success state](/screenshots/mobile_success_state.png)
 
 - Solution URL: [GitHub](https://github.com/m-nkosi/newsletter.git)
-- Live Site URL: [Add live site URL here](https://newsletter-by-mxolisi.netlify.app)
+- Live Site URL: [Live](https://newsletter-by-mxolisi.netlify.app)
 
 ## My process
 
